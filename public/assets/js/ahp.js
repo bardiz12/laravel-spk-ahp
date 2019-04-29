@@ -151,6 +151,7 @@ var criterias = [];
                 i++;
             });
             var html = (c+1) + `. PairWise Matrix for Criteria : <strong>`+critera_name+`</strong>
+                        <div class="table-responsive">
                         <table class="table table-striped">
                             <thead class="black white-text">
                                 <tr>
@@ -161,7 +162,7 @@ var criterias = [];
                             <tbody>
                                 `+tbody+`
                             </tbody>
-                        </table>`;
+                        </table></div>`;
             $('#pairwise-body').append(html);
         }
 

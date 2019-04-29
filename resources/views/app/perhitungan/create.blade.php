@@ -121,16 +121,18 @@
                     </div>
                 </h5>
                 <div class="card-body px-lg-5 pt-0 mt-2 collapse show" id="interest-matrix-body">
-                    <table class="table table-striped">
-                        <thead class="black white-text">
-                            <tr id="table-matrix-interest-atas">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead class="black white-text">
+                                <tr id="table-matrix-interest-atas">
+                                    
+                                </tr>
+                            </thead>
+                            <tbody id="table-matrix-interest-bawah">
                                 
-                            </tr>
-                        </thead>
-                        <tbody id="table-matrix-interest-bawah">
-                            
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
