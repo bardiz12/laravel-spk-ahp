@@ -1,0 +1,18 @@
+.about-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #ddd;
+}
+
+.container .jumbotron{
+    margin-top:10px;margin-bottom:0px
+}
+
+.animate-all {
+    transition: all 0.25s ease-in-out;
+}
+
+.table-input{
+    border-radius: 0;
+    text-align: center;
+}
