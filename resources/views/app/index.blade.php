@@ -11,7 +11,7 @@
                         <div>
                             <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>Analytical Hierarchy Process</strong></h2>
                             <a class="btn btn-outline-white btn-md" href="#team-container"><i class="fa fa-rocket"></i> Our Team</a>
-                            <a class="btn btn-outline-white btn-md" href="#team-container"><i class="fa fa-info"></i> About this Project</a><br/>
+                            <a class="btn btn-outline-white btn-md" href="#about-container"><i class="fa fa-info"></i> About this Project</a><br/>
 
                         <a class="btn btn-primary btn-lg" href="{{route('perhitungan.buat')}}"><i class="fa fa-calculator"></i> Buat Perhitungan</a>
                         </div>
@@ -85,7 +85,7 @@
                         </div>
             </div>
             <div class="col-md-6">
-                <div class="jumbotron purple-gradient" id="team-container">
+                <div class="jumbotron purple-gradient" id="about-container">
                         <div class="text-white px-4 my-1">
                                 <h2 class="card-title h1-responsive pt-1 mb-5 font-bold text-center"><strong>ABOUT <i class="fa fa-info"></i></strong></h2>
                                 <div class="text-right">

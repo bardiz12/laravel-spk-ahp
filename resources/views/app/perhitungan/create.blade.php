@@ -29,7 +29,7 @@
             <h5 class="card-header info-color white-text d-flex justify-content-between align-items-center py-4">
                 
                         <strong>1. Criteria</strong>
-                                <button class="btn btn-outline-white btn-sm" data-toggle="collapse" data-target="#criteria-body" aria-expanded="true" aria-controls="collapseOne">
+                                <button type="button" class="btn btn-outline-white btn-sm" data-toggle="collapse" data-target="#criteria-body" aria-expanded="true" aria-controls="collapseOne">
                                     <i class="fa fa-eye"></i>
                                 </button>
            
@@ -189,6 +189,7 @@
 
         // Material Select Initialization
 $(document).ready(function() {
+
     $('#store-perhitungan').on('submit',function(ev){
         ev.preventDefault();
         var url = $(this).attr('action');

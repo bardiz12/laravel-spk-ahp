@@ -15,7 +15,7 @@ var criterias = [];
                                 </span>
                             </div>
                             <span class="col-1">
-                                <button class="btn btn-danger btn-sm" onclick="return deleteCriteriaInput(this);">
+                                <button  type="button"  class="btn btn-danger btn-sm" onclick="return deleteCriteriaInput(this);">
                                     <i class="fa fa-trash"></i>
                                 </button>
                             </span>
@@ -214,7 +214,7 @@ var criterias = [];
                             </div>
                             
                             <span class="col-2">
-                                <button class="btn btn-danger btn-sm" onclick="deleteCriteriaInput(this)">
+                                <button  type="button"  class="btn btn-danger btn-sm" onclick="deleteCriteriaInput(this)">
                                     <i class="fa fa-trash"></i>
                                 </button>
                             </span>
