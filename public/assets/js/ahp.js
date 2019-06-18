@@ -6,7 +6,7 @@ var criterias = [];
             $("#criteria-form-container").append(`<div class="md-form">
                         <div class="row">
                             <div class="col-10">
-                                <input type="text" name="criterias[]" placeholder="Masukan criteria" class="form-control criteria" required>
+                                <input type="text" name="criterias[]" placeholder="Masukan criteria" class="form-control criteria" required >
                                 <span class="d-block">
                                     <select name="types[]" class="browser-default custom-select criteria-type small" required>
                                         <option value="0" selected>Qualitative</option>
@@ -21,6 +21,7 @@ var criterias = [];
                             </span>
                         </div>
                     </div>`);
+                $(".criteria").focus();
         }
 
         function generateInterestRelativeMatrix(){
@@ -79,11 +80,29 @@ var criterias = [];
             var i =$(trig).data('i');
             var j = $(trig).data('j');
             if(nstr != ''){
+                var nextEl = null
                 $('#table-input-'+j+'-'+i).val('AUTO');
+                var increment = null;
+                if($('#table-input-'+i+'-'+(j + 1)).length > 0){
+                    j++;
+                    nextEl = $('#table-input-'+i+'-'+(j));
+                    increment &= j;
+                }else if($('#table-input-'+(i+1)+'-0').length > 0){
+                    i++;
+                    j=0;
+                    increment &= i;
+                    nextEl = $('#table-input-'+(i)+'-0');
+                }
+                if(nextEl){
+                    if(i!=j){
+                        increment++;
+                    }
+                    $('#table-input-'+i+'-'+(j)).focus();
+                }
+                
             }else{
                 $('#table-input-'+j+'-'+i).val('');
             }
-            
         }
 
         function cekPairWiseMatrix(trig,c){
@@ -225,6 +244,8 @@ var criterias = [];
 
                 </div>
                                     `);
+
+                $(".alternative-input").focus();
         }
 
         function deleteCriteriaInput(trig){
@@ -250,3 +271,8 @@ var criterias = [];
         }
 
         
+$(document).ready(function(){
+    $(document).on("click","input[type='text']", function () {
+        $(this).select();
+     });
+});

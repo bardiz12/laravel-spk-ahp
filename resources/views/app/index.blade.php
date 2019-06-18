@@ -65,7 +65,7 @@
                                                         Moch Bardizba Z.<br/>
                                                         4611416038
                                                         <br>
-                                                        <small>Web Developer</small>
+                                                        <small>Manusia</small>
                                                     </div>
                                                 </div>
                                             </div>

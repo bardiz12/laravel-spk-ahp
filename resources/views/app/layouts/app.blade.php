@@ -15,6 +15,7 @@
     </head>
     <link rel="stylesheet" href="{{asset('assets/css/app.css')}}">
 <body class="white-skin">
+        <div class="se-pre-con" style="background: url(https://inspektorat.jatengprov.go.id/17/po-content/themes/chingsy3/images/Preloader_8.gif?v=1558885417) center no-repeat #fff;"></div>
     <nav class="navbar navbar-expand-lg white fixed-top">
         <a class="navbar-brand" href="#">{{env('APP_NAME')}}</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,6 +57,13 @@
     <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
     @stack('script-bawah')
+    <script>
+    $(window).on('load',function() {
+        // Animate loader off screen
+        console.log('load');
+		$(".se-pre-con").fadeOut("slow");;
+    });
+    </script>
     
 </body>
 </html>
