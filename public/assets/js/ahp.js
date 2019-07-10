@@ -1,7 +1,7 @@
 var criterias = [];
         var types = [];
         var candidates = [];
-        var numbers = ["0","1","2","3","4","5","6","7","8","9"];
+        var numbers = ["0","1","2","3","4","5","6","7","8","9","."];
         function addNewCriteriaInput(){
             $("#criteria-form-container").append(`<div class="md-form">
                         <div class="row">
@@ -72,14 +72,18 @@ var criterias = [];
             for (let i = 0; i < str.length; i++) {
                 if(numbers.includes(str[i])){
                     nstr+=str[i];
+                    console.log("CHAR",str[i]);
+                    console.log(str);
                 }
             }
+            //console.log(nstr);
+            var timer = setInterval(function(){
+                nstr = nstr === '' ? '' : parseFloat(nstr);
             console.log(nstr);
-            nstr = nstr == '' ? '' : parseInt(nstr);
             $(trig).val(nstr);
             var i =$(trig).data('i');
             var j = $(trig).data('j');
-            if(nstr != ''){
+            if(nstr !== ''){
                 var nextEl = null
                 $('#table-input-'+j+'-'+i).val('AUTO');
                 var increment = null;
@@ -103,6 +107,8 @@ var criterias = [];
             }else{
                 $('#table-input-'+j+'-'+i).val('');
             }
+            clearInterval(timer);
+            },1000);
         }
 
         function cekPairWiseMatrix(trig,c){
@@ -115,11 +121,11 @@ var criterias = [];
                 }
             }
             console.log(nstr);
-            nstr = nstr == '' ? '' : parseInt(nstr);
+            nstr = nstr === '' ? '' : parseFloat(nstr);
             $(trig).val(nstr);
             var i =$(trig).data('i');
             var j = $(trig).data('j');
-            if(nstr != ''){
+            if(nstr !== ''){
                 $('#table-'+c+'-input-'+j+'-'+i).val('AUTO');
             }else{
                 $('#table-'+c+'-input-'+j+'-'+i).val('');
