@@ -77,8 +77,11 @@ var criterias = [];
                 }
             }
             //console.log(nstr);
-            var timer = setInterval(function(){
-                nstr = nstr === '' ? '' : parseFloat(nstr);
+            //var timer = setInterval(function(){
+            if(str[str.length-1] == "."){
+                return true;
+            }
+            nstr = nstr === '' ? '' : parseFloat(nstr);
             console.log(nstr);
             $(trig).val(nstr);
             var i =$(trig).data('i');
@@ -101,14 +104,14 @@ var criterias = [];
                     if(i!=j){
                         increment++;
                     }
-                    $('#table-input-'+i+'-'+(j)).focus();
+                    //$('#table-input-'+i+'-'+(j)).focus();
                 }
                 
             }else{
                 $('#table-input-'+j+'-'+i).val('');
             }
-            clearInterval(timer);
-            },1000);
+            //clearInterval(timer);
+            //},1000);
         }
 
         function cekPairWiseMatrix(trig,c){
