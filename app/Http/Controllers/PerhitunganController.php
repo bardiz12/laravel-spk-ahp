@@ -71,7 +71,7 @@ class PerhitunganController extends Controller
                 'description'=>$request->input('description'),
                 'data'=>json_encode($request->all())
             ]);
-            echo "<a href=".route('perhitungan.show',[$perhitungan->id])."'>CLICK HERE TO SEE THE RESULT</a>";
+            echo "<a href=".route('perhitungan.show',[$perhitungan->id]).">CLICK HERE TO SEE THE RESULT</a>";
         }catch(\ErrorException $e){
             echo "ERROR : ".$e->getMessage();
         }
