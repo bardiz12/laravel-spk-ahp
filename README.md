@@ -45,3 +45,6 @@ Sistem Pendukung Keputusan (DSS) yang dapat digunakan untuk membantu pemilihan k
 2. <a href="https://user-images.githubusercontent.com/25524265/68144476-5fc4f080-ff66-11e9-9467-1b970fdd6dcd.png" target="_blank">Halaman Perhitungan yang disimpan</a>
 2. <a href="https://user-images.githubusercontent.com/25524265/68144543-82570980-ff66-11e9-810f-e574a8b431bf.png" target="_blank">Halaman Hasil Perhitungan</a>
 
+## Demo
+#### <a href="http://spk-ahp.herokuapp.com/" target="_blank">http://spk-ahp.herokuapp.com/</a>
+
