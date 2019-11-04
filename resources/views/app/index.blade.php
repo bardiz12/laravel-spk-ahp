@@ -32,7 +32,7 @@
                                             <div class="container">
                                                 <div class="row">
                                                     <div class="col-md-12 text-center">
-                                                        <img src="https://bardizba.com/themes/bardizba-blog/assets/images/profile.jpg" class="rounded-circle" alt="" style="width:50%;">
+                                                        <img src="https://avatars1.githubusercontent.com/u/25524265" class="rounded-circle" alt="" style="width:50%;">
                                                         <br>
                                                         Moch Bardizba Z.<br/>
                                                         4611416038
