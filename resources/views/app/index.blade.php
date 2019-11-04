@@ -28,35 +28,7 @@
                                 <h2 class="card-title h1-responsive pt-1 mb-5 font-bold text-center "><strong><i class="fa fa-rocket"></i> OUR TEAM</strong></h2>
                                 <div id="team" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
-                                          <div class="carousel-item active" data-color="aqua-gradient">
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="col-md-12 text-center">
-                                                    <img src="{{asset('assets/img/novi.png')}}" class="rounded-circle" alt="" style="width:50%;">
-                                                        <br>
-                                                        Novi Kurniawan<br/>
-                                                        4611416001
-                                                        <br>
-                                                        <small>Analisis Sistim</small>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                          </div>
-                                          <div class="carousel-item" data-color="peach-gradient">
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="col-md-12 text-center">
-                                                        <img src="{{asset('assets/img/giri.png')}}" class="rounded-circle" alt="" style="width:50%;">
-                                                        <br>
-                                                        M. Giri Laksana<br/>
-                                                        4611416016
-                                                        <br>
-                                                        <small>Analisis Sistim</small>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                          </div>
-                                          <div class="carousel-item" data-color="blue-gradient">
+                                          <div class="carousel-item active" data-color="blue-gradient">
                                             <div class="container">
                                                 <div class="row">
                                                     <div class="col-md-12 text-center">
